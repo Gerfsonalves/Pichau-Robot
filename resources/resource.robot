@@ -11,13 +11,13 @@ Acessar site
   Maximize Browser Window
 
 Click departamentos
-
-  Page Should Contain Element         xpath=//button[.//span[contains(text(), "Acesse todos os")]]   timeout= 10 seconds
-  Click Element                       xpath=//button[.//span[contains(text(), "Acesse todos os")]]
+  Element Should Be Visible       xpath=//button[.//span[contains(text(), "Acesse todos os")]]
+  
+  Click Element                       xpath=//button[.//span[contains(text(), "Acesse todos os")]]  
 
 
 Click monitores
-  Wait Until Page Contains Element    css:a.jss197[href="/monitores"]    timeout=10
+  Wait Until Page Contains Element    css:a.jss197[href="/monitores"] 
   Click Element                       css:a.jss197[href="/monitores"]
 
 

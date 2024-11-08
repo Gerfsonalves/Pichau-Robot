@@ -6,3 +6,6 @@ Resource   ../resources/resource.robot
 Verificar departamentos
    Acessar site
    Click departamentos
+   Click monitores
+   Click Monitor Casa e Escritório
+   Close Browser

@@ -11,5 +11,14 @@ Acessar site
   Maximize Browser Window
 
 Click departamentos
-  Wait Until Page Contains    Acesse todos os Departamentos    timeout=10s
-  Click Element    css=.jss220
+  Wait Until Page Contains Element    xpath://strong[@class="jss221" and contains(text(), "Departamentos")]   
+  Page Should Contain Element         xpath://strong[@class="jss221" and contains(text(), "Departamentos")]
+  Click Element                       css=.jss220
+
+Click monitores
+  Wait Until Page Contains Element    css:a.jss197[href="/monitores"]    timeout=10
+  Click Element                       css:a.jss197[href="/monitores"]
+
+
+Click Monitor Casa e Escritório
+  Click Element                       xpath=//span[text()='Monitor Casa e Escritório']

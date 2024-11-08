@@ -12,8 +12,9 @@ Acessar site
 
 Click departamentos
 
-  Page Should Contain Element         xpath://strong[@class="jss221" and contains(text(), "Departamentos")]   timeout= 10 seconds
-  Click Element                       css=.jss220
+  Page Should Contain Element         xpath=//button[.//span[contains(text(), "Acesse todos os")]]   timeout= 10 seconds
+  Click Element                       xpath=//button[.//span[contains(text(), "Acesse todos os")]]
+
 
 Click monitores
   Wait Until Page Contains Element    css:a.jss197[href="/monitores"]    timeout=10

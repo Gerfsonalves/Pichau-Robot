@@ -11,7 +11,7 @@ Acessar site
   Maximize Browser Window
 
 Click departamentos
-  Element Should Be Visible       xpath=//button[.//span[contains(text(), "Acesse todos os")]]
+  Wait Until Element Is Visible       xpath=//button[.//span[contains(text(), "Acesse todos os")]]
   
   Click Element                       xpath=//button[.//span[contains(text(), "Acesse todos os")]]  
 

@@ -11,7 +11,7 @@ Acessar site
   Maximize Browser Window
 
 Click departamentos
-  Wait Until Page Contains Element    xpath://strong[@class="jss221" and contains(text(), "Departamentos")]    timeout= 10 seconds
+  Wait Until Element Is Visible       xpath://strong[contains(text(), "Departamentos")]    timeout= 10 seconds
   Page Should Contain Element         xpath://strong[@class="jss221" and contains(text(), "Departamentos")]
   Click Element                       css=.jss220
 

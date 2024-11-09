@@ -6,3 +6,4 @@ Resource  ../resources/resource.robot
 Busca de produtos por nome
   Acessar site
   Busca
+  Close Browser

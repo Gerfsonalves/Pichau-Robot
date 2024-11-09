@@ -8,3 +8,4 @@ Verificar departamentos
    Departamentos
    Monitores
    Monitor Casa e Escritório
+   Close Browser

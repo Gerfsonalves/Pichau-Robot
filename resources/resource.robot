@@ -10,6 +10,7 @@ ${SOBRENOME}        Silva
 ${CPF}              12345678910
 ${RG}               123456789
 ${EMAIL}            Email@text.com
+${PASSWORD}         1234Teste
 
 *** Keywords ***
 Acessar site
@@ -64,9 +65,21 @@ Email
 Senha
   Scroll Element Into View         name=newPassword
   Wait Until Element Is Visible    name=newPassword    10s
-  Input Text                       name=newPassword  ${EMAIL}
+  Input Text                       name=newPassword  ${PASSWORD}
 
 Clicar No Botão Criar Conta
   Scroll Element Into View         xpath=//button[.//span[text()="Criar conta"]]  
   Wait Until Element Is Visible    xpath=//button[.//span[text()="Criar conta"]]    10s
   Click Element                    xpath=//button[.//span[text()="Criar conta"]]
+
+Entrar no login
+  Click Element    xpath=//a[@href="/account"]
+
+Email login
+  Input Text     id=username  ${NOME}
+
+Senha login
+  Input Password  id=password  ${PASSWORD}
+
+Clicar login
+  Click Element    css:[data-cy="login-submit"]

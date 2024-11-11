@@ -73,13 +73,13 @@ Clicar No Botão Criar Conta
   Click Element                    xpath=//button[.//span[text()="Criar conta"]]
 
 Entrar no login
-  Click Element    xpath=//a[@href="/account"]
+  Click Element                    xpath=//a[@href="/account"]
 
 Email login
-  Input Text     id=username  ${NOME}
+  Input Text                       id=username  ${NOME}
 
 Senha login
-  Input Password  id=password  ${PASSWORD}
+  Input Password                   id=password  ${PASSWORD}
 
 Clicar login
-  Click Element    css:[data-cy="login-submit"]
+  Click Element                    css:[data-cy="login-submit"]
